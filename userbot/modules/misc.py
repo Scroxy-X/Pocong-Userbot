@@ -65,7 +65,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Shutdown *Pocong-Userbot*....`")
+    await event.edit("`Shutdown *userbot*....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -120,14 +120,14 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "   **[[KLIK HERE]](https://pornhub.com)**\n     **To Use Official Repo**\n        🔥 **Pocong-Userbot** 🔥\n ≪━━━━━━━━☤━━━━━━━━≫\n             **Thanks for using**\n "
+        "   **[[KLIK HERE]](https://pornhub.com)**\n     **To Use Official Repo**\n        🔥 **Userbot** 🔥\n ≪━━━━━━━━☤━━━━━━━━≫\n             **Thanks for using**\n "
     )
     
-#@register(outgoing=True, patterm=".repobot$")
+#@register(outgoing=True, patterm=".bot$")
 #async def repo_is_here(wannasee):
 #    """ For .repo command, just returns the repo URL. """
 #    await wannasee.edit(
-#        "   **[[KLIK HERE]](https://github.com/poocong/Pocong-Userbot)**\n     **To Use Official Repo**\n        🔥 **Pocong-Userbot** 🔥\n ≪━━━━━━━━☤━━━━━━━━≫\n             **Thanks for using**\n "
+#        "   **[[KLIK HERE]](https://github.com/Scroxy-X/Userbot)**\n     **To Use Official Repo**\n        🔥 **Userbot** 🔥\n ≪━━━━━━━━☤━━━━━━━━≫\n             **Thanks for using**\n "
 #)
     
 
@@ -167,7 +167,7 @@ async def okgoogle(img):
         photo = io.BytesIO()
         await bot.download_media(message, photo)
     else:
-        await img.edit("`Balas di Gambar Goblokk!!.`")
+        await img.edit("`Balas di Gambar cok!!.`")
         return
 
     if photo:
@@ -285,7 +285,7 @@ CMD_HELP.update({
     ">`.shutdown`\
     \nPenjelasan: Menurunkan Versi Bot",
     "repo":
-    ">`.repo .repobot`\
+    ">`.repo .bot`\
     \nPenjelasan: Untuk Melihat Repo Bot Anda",
 #
 #">`.repobot`\
